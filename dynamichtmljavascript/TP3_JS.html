@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo">
+        <h1>Hello All !!</h1>
+        <p id="parag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis molestiae impedit nihil beatae eos
+            libero. Aut rerum dignissimos qui beatae!</p>
+    </div>
+    <script>
+    /**
+    Ecrire un code javascript qui permet de mettre en majuscule
+    tout le contenu du paragraphe <p>
+    */  
+    var parag = document.getElementById("parag").textContent.toUpperCase();
+    document.getElementById("parag").innerHTML = parag
+
+    </script>
+</body>
+
+</html>

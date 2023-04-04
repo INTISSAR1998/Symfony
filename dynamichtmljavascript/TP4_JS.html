@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        /**
+         * Créer un nouvel élément h1 :
+         * 1. Rajouter le texte suivant : Ceci est un Heading from Javascript
+         * 2. fontsize : 32px
+         * 3. couleur : bleu
+         * 4. l'attacher directement à la balise div
+         * 5. modifier le code pour le rajouter à l'élément parent qui est le body.
+         */
+        var elem = document.createElement("h1");
+        elem.innerHTML = "Ceci est un Heading from Javascript";
+        elem.style.fontSize = "32px";
+        elem.style.color = "blue";
+        document.getElementById("demo").appendChild(elem);
+    </script>
+</body>
+
+</html>

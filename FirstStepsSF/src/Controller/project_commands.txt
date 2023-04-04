@@ -1,0 +1,18 @@
+composer create-project symfony/website-skeleton nom-projet
+composer create-project symfony/skeleton nom-projet
+php -S localhost:8000 -t public
+1 - On veut créer un prmeir controleur
+--> nous avons besoin du bundle make.
+--> composer require make (Non OK)
+--> composer require doctrine/annotations
+--> composer require make (OK)
+2 - créer un controleur MainController
+--> php bin/console make:controller MainController
+--> création d'un controleur MainController.php
+3- Installer le composer template:
+--> composer require template
+-------************-------------
+création d'une nouvelle entité 
+php bin/console make:entity Student
+--> requière l'installation d'un ORM
+--> ORM : Object relational Mapping

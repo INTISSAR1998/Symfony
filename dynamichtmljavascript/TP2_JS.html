@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>My First JavaScript</h1>
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <script>
+        /** 
+         * 1. Créer une fonction qui permet de changer l'état d'une ampoule entre éteinte et allumé. Deux boutons permettront de réaliser le résultat pensez à if - else. 
+         * 2. Rajouter dans le code un paragraphe de description indiquant
+         * l'état de l'ampoule : éteinte et allumé
+         */
+        function light(etatAmpoule){
+            var image;
+            var description;
+            if (etatAmpoule == 0){
+                image = "images/ampouleOff.jpg"
+                description = "ampoule est off"
+            }else{
+                image = "images/ampouleOn.jpg"
+                description = "ampoule est on"
+            }
+            document.getElementById("myImage").src = image;
+            document.getElementById("desc").textContent = description;
+        }
+    
+    </script>
+
+    <img id="myImage" src="images/ampouleOff.jpg" width="100" height="180">
+    <p id="desc"></p>
+
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+
+</body>
+
+</html>
