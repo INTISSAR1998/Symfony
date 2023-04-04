@@ -1,0 +1,47 @@
+/**
+General style
+ */
+body {
+	font-family: Roboto, serif;
+	font-size: 0.8em;
+	color: black;
+}
+
+h1 {
+
+}
+h2 {
+	font-family: Niramit, serif;
+}
+h3 {
+	font-family: Roboto, serif;
+	font-size: 1.125em;
+}
+p {
+	font-size: 1em;
+}
+
+.bg-color-footer {
+	background-color: #F5F5F5;
+}
+a {
+	font-family: Roboto, serif;
+	font-size: 1.125em;
+	color: black;
+}
+.carousel-inner{
+	width:100%;
+	max-height: 400px !important;
+}
+
+.learning-path {
+	font-size: 17px;
+	line-height: 19px;
+	color: #ffffff;
+	text-shadow: 0 0 13px rgba(0,0,0,.55);
+	font-weight: 700;
+}
+
+#background-hero {
+	background-color: #000000;
+}
